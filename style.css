@@ -3,11 +3,11 @@
 @font-face
 {
     font-family: 'BallparkWeiner';
-    src: url('ballpark.eot');
-    src: url('ballpark.eot?#iefix') format('embedded-opentype'),
-         url('ballpark.woff') format('woff'),
-         url('ballpark.ttf') format('truetype'),
-         url('ballpark.svg#BallparkWeiner') format('svg');
+    src: url('polices/ballpark.eot');
+    src: url('polices/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('polices/ballpark.woff') format('woff'),
+         url('polices/ballpark.ttf') format('truetype'),
+         url('polices/ballpark.svg#BallparkWeiner') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -15,11 +15,11 @@
 @font-face
 {
     font-family: 'Dayrom';
-    src: url('dayrom.eot');
-    src: url('dayrom.eot?#iefix') format('embedded-opentype'),
-         url('dayrom.woff') format('woff'),
-         url('dayrom.ttf') format('truetype'),
-         url('dayrom.svg#Dayrom') format('svg');
+    src: url('polices/dayrom.eot');
+    src: url('polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('polices/dayrom.woff') format('woff'),
+         url('polices/dayrom.ttf') format('truetype'),
+         url('polices/dayrom.svg#Dayrom') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -28,7 +28,7 @@
 
 body
 {
-	background: url('fond_jaune.png');
+	background: url('images/fond_jaune.png');
 	font-family: 'Trebuchet MS', Arial, sans-serif;
 	color: #181818;
 }
@@ -39,6 +39,82 @@ body
 	margin: auto;
 }
 
+@media all and (max-width: 1024px)
+{
+   #bloc_page
+   {
+      width: auto;
+   }
+}
+
+@media all and (max-width: 1024px)
+{
+   nav
+   {
+      width: auto;
+      text-align: left;
+   }
+   
+   nav ul
+   {
+      flex-direction: column;
+   }
+   
+   nav li
+   {
+      padding-left: 4px;
+   }
+   
+   nav a
+   {
+      font-size: 1.1em;
+   }
+   
+   nav a:hover
+   {
+      border-bottom: 0;
+   }
+ 
+}
+
+@media all and (max-width: 1024px)
+{
+   #banniere_image
+   {
+      display:none;
+   }
+}
+
+@media all and (max-width: 1024px)
+{
+   section
+   {
+      flex-direction: column;
+   }
+   
+   article, aside
+   {
+      width: auto;
+      margin-bottom: 15px;
+   }
+   
+   #fleche_bulle
+   {
+      display: none;
+   }
+   
+   #photo_zozor
+   {
+      width: 110;
+      float: right;
+      margin-left: 15px;
+   }
+   
+   aside p:last-child
+   {
+      text-align: center;
+   }
+}
 section h1, footer h1, nav a
 {
 	font-family: Dayrom, serif;
@@ -50,7 +126,7 @@ section h1, footer h1, nav a
 
 header
 {
-	background: url('separateur.png') repeat-x bottom;
+	background: url('images/separateur.png') repeat-x bottom;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -127,7 +203,7 @@ nav a:hover
     margin-top: 15px;
     height: 200px;
     border-radius: 5px;
-    background: url('sanfrancisco.jpg') no-repeat;
+    background: url('images/sanfrancisco.jpg') no-repeat;
     position: relative;
     box-shadow: 0px 4px 4px #1c1a19;
     margin-bottom: 25px;
@@ -154,7 +230,7 @@ nav a:hover
     position: absolute;
     right: 5px;
     bottom: 5px;
-    background: url('fond_degraderouge.png') repeat-x;
+    background: url('images/fond_degraderouge.png') repeat-x;
     border: 1px solid #760001;
     border-radius: 5px;
     font-size: 1.2em;
@@ -238,7 +314,7 @@ aside img
 footer
 {
 	display: flex;
-	background: url('ico_top.png') no-repeat top center, url('separateur.png') repeat-x top; padding-top: 25px;
+	background: url('images/ico_top.png') no-repeat top center, url('images/separateur.png') repeat-x top; padding-top: 25px;
 }
 
 footer p, footer ul
@@ -281,7 +357,7 @@ footer h1
 
 #mes_amis ul
 {
-    list-style-image: url('ico_liensexterne.png');
+    list-style-image: url('images/ico_liensexterne.png');
     padding-left: 2px;
 }
 
